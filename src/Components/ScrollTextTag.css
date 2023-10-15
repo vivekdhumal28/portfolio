@@ -1,6 +1,6 @@
 .scrolling-text-marquee {
   width: 100%;
-  font-family: "Cuprum", sans-serif;
+
   justify-items: center;
 }
 
@@ -12,6 +12,8 @@
   position: relative;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  background-color: #f689ac;
+  background-color: #e11584;
   color: white;
+  font-family: "Anton", sans-serif;
+  word-spacing: 0.1rem;
 }

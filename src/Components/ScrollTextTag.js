@@ -16,7 +16,7 @@ const ScrollTextTag = () => {
   return (
     <div className="scrolling-text-container">
       <marquee behavior="scroll" direction="right" id="scrolling-text-marquee">
-        {"   New Arrival   ".repeat(20)}
+        {" My Skills ".repeat(20)}
       </marquee>
     </div>
   );

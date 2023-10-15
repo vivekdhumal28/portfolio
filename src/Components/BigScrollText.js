@@ -20,7 +20,7 @@ const BigScrollText = () => {
         direction="left"
         id="scrolling-text-marquee-big"
       >
-        {"  🔥 TRENDING ❤️  🔥 TRENDING ❤️ ".repeat(20)}
+        {"  🔥 KNOW MORE ❤️  🔥 KNOW MORE ❤️ ".repeat(20)}
       </marquee>
     </div>
   );

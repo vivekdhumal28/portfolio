@@ -1,0 +1,81 @@
+/* Header.css */
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #333; /* Text color */
+
+  /* Add some padding to create space around the header */
+}
+
+.logo-with-border {
+  padding-right: 20px; /* Spacing between logo and navbar */
+  display: flex;
+  align-items: center;
+}
+
+.logo-with-border img {
+  max-width: 10em; /* Adjust the size as needed */
+  margin-right: 10px; /* Spacing between logo and navbar */
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px; /* Spacing between navbar tabs */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333; /* Tab text color */
+
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Spacing between location and Hire button */
+}
+
+.search {
+  margin-right: 20px; /* Spacing between search and location */
+  align-items: center;
+}
+
+.hire-button {
+  background-color: #f646aa; /* Light pink color for the Hire button */
+  color: #fff; /* Text color for the button */
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded corners */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.hire-button:hover {
+  background-color: #ff91a2; /* Button background color on hover */
+}
+
+/* Add responsive styles as needed for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Example: Mobile-specific styles can be added here */
+  .navbar li {
+    margin-right: 10px;
+  }
+  .location,
+  .search {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,104 @@
+/* src/components/Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 40px; /* Increase border radius for more rounded corners */
+  margin: 20px; /* Add margin for spacing */
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex: 1;
+  text-align: center;
+  padding: 20px; /* Add padding for spacing within the text container */
+}
+
+.large-text {
+  font-size: 36px;
+}
+
+.medium-text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.download-button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.download-button i {
+  margin-right: 5px;
+}
+
+/* src/components/Home.css
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex: 1;
+  text-align: center;
+}
+
+.large-text {
+  font-size: 36px;
+}
+
+.medium-text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.download-button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.download-button i {
+  margin-right: 5px;
+} */

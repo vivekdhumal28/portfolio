@@ -1,0 +1,17 @@
+.scrolling-text-marquee {
+  width: 100%;
+  font-family: "Cuprum", sans-serif;
+  justify-items: center;
+}
+
+.scrolling-text-container {
+  width: 100%;
+  height: 2em;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #f689ac;
+  color: white;
+}

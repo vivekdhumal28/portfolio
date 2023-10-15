@@ -1,0 +1,10 @@
+/* BigScrollText.css */
+
+.scrolling-text-container_big {
+  height: 6rem; /* Set the height to 5rem */
+  overflow: hidden;
+  font-size: 4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}

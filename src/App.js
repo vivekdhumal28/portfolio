@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import ScrollTextTag from "./Components/ScrollTextTag";
 import BigScrollText from "./Components/BigScrollText";
 import About from "./Components/About";
+import Carousel from "./Components/Carousel";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BigScrollText />
       <About />
       <ScrollTextTag />
+      <Carousel />
     </>
   );
 }

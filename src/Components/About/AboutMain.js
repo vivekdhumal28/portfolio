@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutMain.css"; // You can create a CSS file for styling
 import vivekPic from "../../img/Vivek-Picture.png";
-import info from "../../constants/Constants";
+import { info } from "../../constants/Constants";
 
 const About = () => {
   return (

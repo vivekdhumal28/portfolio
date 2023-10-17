@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
 import React, { useEffect } from "react";
+
 import "./BigScrollText.css";
 
-const BigScrollText = () => {
+const BigScrollText = ({ collection }) => {
   useEffect(() => {
     const marquee = document.getElementById("scrolling-text-marquee-big");
     marquee.addEventListener("end", () => {
@@ -20,7 +21,7 @@ const BigScrollText = () => {
         direction="left"
         id="scrolling-text-marquee-big"
       >
-        {"  🔥 KNOW MORE ❤️  🔥 KNOW MORE ❤️ ".repeat(20)}
+        {collection.repeat(20)}
       </marquee>
     </div>
   );

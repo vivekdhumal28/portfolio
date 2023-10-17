@@ -1,0 +1,89 @@
+/* Experience.css */
+
+.experience {
+  background-color: #ffdc44;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin: 1em;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* .status-bar {
+  height: 10px;
+  background-color: #3498db;
+} */
+
+.experience-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Archivo Black", sans-serif;
+  color: rgb(20, 20, 68);
+  font-size: 2rem;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.experience-item {
+  margin-top: 20px;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
+}
+
+.job-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3498db;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.company-name {
+  font-size: 16px;
+  color: rgb(198, 41, 41);
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.date-range {
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  margin-top: 10px;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}

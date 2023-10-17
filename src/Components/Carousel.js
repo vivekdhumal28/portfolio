@@ -1,41 +1,80 @@
-// components/Carousel.js
-import React, { useRef, useEffect } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import React, { useState, useEffect, useCallback } from "react";
 import images from "../importImages";
-import "./Carousel.css"; // Import a CSS file for styling
+import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+import "./Carousel.css";
 
-const CarouselComponent = () => {
-  const carouselRef = useRef(null);
+function CarouselComponent() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const visibleImageCount = calculateVisibleImageCount();
+  const totalImages = images.length;
+
+  // Calculate the number of visible images based on screen width
+  function calculateVisibleImageCount() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth >= 1200) {
+      return 7;
+    } else if (screenWidth >= 768) {
+      return 5;
+    } else {
+      return 3;
+    }
+  }
+
+  const nextSlide = useCallback(() => {
+    if (currentIndex < totalImages - visibleImageCount) {
+      setCurrentIndex(currentIndex + 1);
+    } else {
+      setCurrentIndex(0);
+    }
+  }, [currentIndex, totalImages, visibleImageCount]);
+
+  const prevSlide = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    } else {
+      setCurrentIndex(totalImages - visibleImageCount);
+    }
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollLeft += 160; // Adjust the scroll distance as needed
-        if (
-          carouselRef.current.scrollLeft ===
-          carouselRef.current.scrollWidth - carouselRef.current.clientWidth
-        ) {
-          carouselRef.current.scrollLeft = 0;
-        }
-      }
-    }, 3000); // Auto-scroll every 3 seconds, adjust as needed
+      nextSlide();
+    }, 4000);
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+    return () => clearInterval(interval);
+  }, [currentIndex, nextSlide]);
+
+  const visibleImages = images.slice(
+    currentIndex,
+    currentIndex + visibleImageCount
+  );
 
   return (
-    <div className="carousel-container">
-      <div className="carousel" ref={carouselRef}>
-        {images.map((image, index) => (
-          <div key={index} className="carousel-slide">
-            <img src={image} alt={`Image1 ${index + 1}`} />
+    <>
+      <div className="containerC">
+        <h1>Frontend Skills</h1>
+        <div className="image-sliderC">
+          <button className="btn" onClick={prevSlide}>
+            {<BiChevronLeft />}
+          </button>
+          <div className="slider-contentC">
+            {visibleImages.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Image1 ${index + 1}`}
+                className={`carousel-image ${index === 0 ? "active" : ""}`}
+              ></img>
+            ))}
           </div>
-        ))}
+          <button className="btn" onClick={nextSlide}>
+            {<BiChevronRight />}
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
-};
+}
 
 export default CarouselComponent;

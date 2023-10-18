@@ -10,6 +10,7 @@ import Experience from "./Components/Experience";
 import Education from "./Components/Education";
 import ProjectMain from "./Components/Project/ProjectMain";
 import ContactMain from "./Components/Contact/ContactMain";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <BigScrollText collection={" 😍  PROJECT WORK 🫡"} />
       <ProjectMain />
       <ContactMain />
+      <Footer />
     </>
   );
 }

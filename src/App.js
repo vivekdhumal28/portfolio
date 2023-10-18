@@ -9,6 +9,7 @@ import Carousel from "./Components/Carousel";
 import Experience from "./Components/Experience";
 import Education from "./Components/Education";
 import ProjectMain from "./Components/Project/ProjectMain";
+import ContactMain from "./Components/Contact/ContactMain";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Education />
       <BigScrollText collection={" 😍  PROJECT WORK 🫡"} />
       <ProjectMain />
+      <ContactMain />
     </>
   );
 }

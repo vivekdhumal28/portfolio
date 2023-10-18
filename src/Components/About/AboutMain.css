@@ -1,9 +1,9 @@
 /* About.css */
-
 .about-container {
+  background-image: url("../../img/skyColor.png");
   padding: 20px;
   text-align: center;
-  background-color: #edeff1;
+  background-color: #b1e1fc;
   margin: 1em;
   border-radius: 2em;
 }

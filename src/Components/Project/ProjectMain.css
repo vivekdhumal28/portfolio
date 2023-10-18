@@ -1,0 +1,83 @@
+.main {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .main {
+    display: block;
+  }
+}
+
+.project-card {
+  width: 100%;
+  max-width: 44%;
+  display: flex;
+
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 0.3125rem;
+  margin: 2em;
+  padding: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-details {
+  padding: 10px;
+}
+
+.project-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.project-description {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  gap: 1em;
+}
+
+.github-button,
+.visit-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 0.3125rem;
+  text-align: center;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.github-button:hover,
+.visit-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .project-card {
+    width: 48%; /* Adjust the width as needed to fit two cards side by side */
+    margin-right: 2%; /* Add a little spacing between cards */
+  }
+
+  .project-card:nth-child(2n) {
+    margin-right: 0; /* Remove right margin for even-numbered cards to align them correctly */
+  }
+}

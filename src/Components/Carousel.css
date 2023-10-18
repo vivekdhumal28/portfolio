@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -12,7 +13,7 @@
 .containerC {
   text-align: center;
   background-color: #f8f4f4;
-  border-radius: 2em;
+  border-radius: 0.3125rem;
   padding: 20px;
   margin: 1rem;
   max-width: 100%; /* Make the container responsive */

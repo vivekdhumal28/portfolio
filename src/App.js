@@ -8,6 +8,7 @@ import About from "./Components/About";
 import Carousel from "./Components/Carousel";
 import Experience from "./Components/Experience";
 import Education from "./Components/Education";
+import ProjectMain from "./Components/Project/ProjectMain";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       <Carousel />
       <Experience />
       <Education />
-      <BigScrollText collection={" 😍  COLLECTION 🫡"} />
+      <BigScrollText collection={" 😍  PROJECT WORK 🫡"} />
+      <ProjectMain />
     </>
   );
 }

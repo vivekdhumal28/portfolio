@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
 import React, { useEffect } from "react";
-
 import "./BigScrollText.css";
 
 const BigScrollText = ({ collection }) => {

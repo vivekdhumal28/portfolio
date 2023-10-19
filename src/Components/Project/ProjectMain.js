@@ -21,7 +21,7 @@ const ProjectMain = () => {
                   rel="noopener noreferrer"
                   className="github-button"
                 >
-                  GitHub
+                  Git
                 </a>
                 <a
                   href={project.visitLink}

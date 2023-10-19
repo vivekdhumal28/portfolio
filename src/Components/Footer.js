@@ -1,5 +1,14 @@
 import React from "react";
-import "./Footer.css"; // Import your CSS file
+import { socialImg } from "../importImages";
+import "./Footer.css";
+
+const socialLinks = [
+  "https://github.com/yourgithub",
+  "https://linkedin.com/in/yourlinkedin",
+  "https://wa.me/0000000000",
+  "mailto:abcd@example.com",
+  "tel:+1234567890",
+];
 
 const Footer = () => {
   return (
@@ -17,21 +26,11 @@ const Footer = () => {
         </p>
       </div>
       <div className="right-section">
-        <a href="https://github.com/yourgithub">
-          <i className="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/yourlinkedin">
-          <i className="fab fa-linkedin"></i>
-        </a>
-        <a href="https://wa.me/yourwhatsappnumber">
-          <i className="fab fa-whatsapp"></i>
-        </a>
-        <a href="mailto:youremail@example.com">
-          <i className="fas fa-envelope"></i>
-        </a>
-        <a href="tel:+1234567890">
-          <i className="fas fa-phone"></i>
-        </a>
+        {socialImg.map((image, index) => (
+          <a key={index} href={socialLinks[index]}>
+            <img src={image} alt={`Icon ${index + 1}`} />
+          </a>
+        ))}
       </div>
     </footer>
   );

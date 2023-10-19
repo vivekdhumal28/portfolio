@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 import "./ContactMain.css";
+import { ContactUs } from "../ContactUs";
 
 const ContactMain = () => {
   return (
@@ -18,39 +19,7 @@ const ContactMain = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-
-      <div className="container">
-        <div className="contact-form">
-          <form action="" method="POST" className="contact-inputs">
-            <input
-              type="text"
-              placeholder="Username"
-              name="username"
-              required
-              autoComplete="off"
-            />
-
-            <input
-              type="email"
-              placeholder="Email"
-              name="email"
-              required
-              autoComplete="off"
-            />
-
-            <textarea
-              name="message"
-              cols="30"
-              rows="10"
-              placeholder="Enter your message"
-              required
-              autoComplete="off"
-            ></textarea>
-
-            <input type="submit" value="Send" />
-          </form>
-        </div>
-      </div>
+      <ContactUs />
     </div>
   );
 };

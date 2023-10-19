@@ -4,26 +4,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.5em;
 }
 
 .left-section {
   flex: 1;
+  text-align: left;
 }
 
 .middle-section {
   flex: 1;
-  text-align: center;
+  text-align: start;
 }
 
 .right-section {
-  flex: 1;
   text-align: right;
-}
-
-.footer a {
-  text-decoration: none;
-  margin: 0 10px;
-  color: #333; /* Link color */
 }
 
 /* Add your own font-awesome styles for the icons */

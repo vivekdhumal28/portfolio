@@ -1,0 +1,51 @@
+/* YourComponent.css */
+
+/* Style for the form container */
+form {
+  max-width: 25rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.contact {
+  font-size: 2em;
+  text-align: center;
+}
+/* Style for labels and input elements */
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5em 0;
+  border: 0.0625em solid #ccc;
+  border-radius: 0.25em;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 5em;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Style for responsive design */
+@media (max-width: 48em) {
+  form {
+    padding: 1rem;
+  }
+  input[type="submit"] {
+    padding: 0.5rem 1rem;
+  }
+}

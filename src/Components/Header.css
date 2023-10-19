@@ -1,19 +1,12 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
-}
-
 .header {
-  width: 100%;
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space;
   align-items: center;
   padding: 10px 0;
   color: #333;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .logo-with-border {
   display: flex;

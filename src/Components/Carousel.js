@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import images from "../importImages";
+import { images } from "../importImages";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import "./Carousel.css";
 

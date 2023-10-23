@@ -1,12 +1,12 @@
 import React from "react";
-import profilePic from "../img/WAPVivek.jpeg";
+import profilePic from "../img/ResumePic-modified.png";
+import { GoDownload } from "react-icons/go";
 import "./Home.css";
 
 const Home = () => {
   const handleDownload = () => {
-    // Replace 'public/' with the path to your dummy PDF file in the public directory.
-    const dummyPdfPath = process.env.PUBLIC_URL + "/dummy_resume.pdf";
-    window.open(dummyPdfPath, "_blank");
+    const PdfPath = process.env.PUBLIC_URL + "/pdfs/Vivek Dhumal Resume.pdf";
+    window.open(PdfPath, "_blank");
   };
 
   return (
@@ -24,7 +24,7 @@ const Home = () => {
           development.
         </p>
         <button className="download-button" onClick={handleDownload}>
-          <i className="fa fa-download"></i> Resume
+          RESUME {<GoDownload />}
         </button>
       </div>
     </div>

@@ -1,21 +1,22 @@
 .header {
   background-color: white;
   display: flex;
-  justify-content: space;
+  justify-content: space-between; /* To separate left and right sections */
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 20px; /* Increased padding for better spacing */
   color: #333;
   box-sizing: border-box;
   overflow: hidden;
 }
-.logo-with-border {
+
+.left-section {
   display: flex;
   align-items: center;
 }
 
 .logo-with-border img {
-  max-width: 10em; /* Adjust the size as needed */
-  margin-right: 10px; /* Spacing between logo and navbar */
+  max-width: 10em;
+  margin-right: 10px;
 }
 
 .navbar ul {
@@ -24,13 +25,13 @@
 }
 
 .navbar li {
-  margin-right: 20px; /* Spacing between navbar tabs */
+  margin-right: 20px;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #333; /* Tab text color */
-  font-size: 16px; /* Adjust the font size as needed */
+  color: #333;
+  font-size: 1em;
 }
 
 .right-section {
@@ -41,20 +42,14 @@
 .location {
   display: flex;
   align-items: center;
-  margin-right: 20px; /* Spacing between location and Search */
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  margin-right: 20px; /* Spacing between Search and Hire button */
+  margin-right: 1em;
 }
 
 .hire-button {
-  background-color: #f646aa; /* Light pink color for the Hire button */
-  color: #fff; /* Text color for the button */
+  background-color: #f646aa;
+  color: #fff;
   padding: 10px 20px;
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 20px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -62,7 +57,7 @@
 }
 
 .hire-button:hover {
-  background-color: #ff91a2; /* Button background color on hover */
+  background-color: #ff91a2;
 }
 
 @media screen and (max-width: 768px) {

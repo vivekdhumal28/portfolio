@@ -1,17 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Import the Link component
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import logoImage from "../img/namelogo.jpg";
-import { IoLocationOutline } from "react-icons/io5";
-import { AiOutlineSearch } from "react-icons/ai";
+import { IoLocationSharp } from "react-icons/io5";
+// import { AiOutlineSearch } from "react-icons/ai";
 import ScrollText from "./ScrollText";
+import Confetti from "react-confetti";
+
 function Header() {
+  const [showConfetti, setShowConfetti] = useState(false);
+
+  const handleHireButtonClick = () => {
+    setShowConfetti(true);
+
+    setTimeout(() => {
+      setShowConfetti(false);
+
+      // Redirect to  email application
+      window.location.href = "mailto:vivekdhumal.28@gmail.com";
+    }, 6000);
+  };
+
   return (
     <>
       <header className="header">
-        <div className="logo-with-border">
-          <img src={logoImage} alt="Your Logo" />
-
+        <div className="left-section">
+          <div className="logo-with-border">
+            <img src={logoImage} alt="Your Logo" />
+          </div>
           <nav className="navbar">
             <ul>
               <li>
@@ -31,14 +47,18 @@ function Header() {
         </div>
         <div className="right-section">
           <div className="location">
-            <IoLocationOutline /> Location
+            <IoLocationSharp /> Pune, MH
           </div>
-          <div className="search">
-            <AiOutlineSearch /> Search
-          </div>
-          <button className="hire-button">Hire</button>
+          <button className="hire-button" onClick={handleHireButtonClick}>
+            Hire
+          </button>
         </div>
       </header>
+      {showConfetti && (
+        <div className="confetti-container">
+          <Confetti width={window.innerWidth} height={window.innerHeight} />
+        </div>
+      )}
       <div>
         <ScrollText />
       </div>
@@ -47,6 +67,7 @@ function Header() {
 }
 
 export default Header;
+
 // import React from "react";
 // import { Link } from "react-router-dom"; // Import the Link component
 // import "./Header.css";

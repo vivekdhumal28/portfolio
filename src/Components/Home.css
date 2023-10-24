@@ -6,7 +6,8 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  background-image: url("../img/ToonemeBG.png");
   border-radius: 0.3rem;
   margin: 20px;
 }

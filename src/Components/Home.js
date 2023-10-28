@@ -5,10 +5,10 @@ import { GoDownload } from "react-icons/go";
 import "./Home.css";
 import About from "./About";
 import BigScrollText from "./BigScrollText";
-import Project from "./Project";
 import ScrollText from "./ScrollText";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import ProjectMain from "./Project/ProjectMain";
 
 const Home = () => {
   const handleDownload = () => {
@@ -41,14 +41,14 @@ const Home = () => {
           <>
             <BigScrollText collection={"  🔥 KNOW MORE ❤️  🔥 KNOW MORE ❤️ "} />
             <About />
-            <BigScrollText collection={" 😍  PROJECT WORK 🫡"} />
           </>
         }
       </div>
       <div id="project">
         {
           <>
-            <Project />
+            <BigScrollText collection={" 😍  PROJECT WORK 🫡"} />
+            <ProjectMain />
           </>
         }
       </div>

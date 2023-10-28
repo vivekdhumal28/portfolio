@@ -20,30 +20,24 @@ h1 {
   align-items: center;
 }
 
-.left {
-  flex: 1;
-  padding: 20px;
-  font-size: 18px;
-  text-align: justify;
-}
-
-.middle {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-}
-
-.middle img {
-  border: 2px solid #000; /* Customize border color */
-  border-radius: 10px 20px;
-  background-color: white;
-  padding: 25px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 10);
-}
-
+.left,
+.middle,
 .right {
   flex: 1;
   padding: 20px;
+  text-align: justify;
+}
+
+.middle img {
+  border: 2px solid #000;
+  border-radius: 20px;
+  background-color: white;
+  padding: 25px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 10);
+  max-width: 100%; /* Ensure images fit within their container */
+}
+
+.right {
   text-align: center;
 }
 
@@ -67,7 +61,8 @@ h1 {
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
+/* Mobile devices (320px — 480px) */
+@media (max-width: 480px) {
   .content {
     flex-direction: column;
   }
@@ -75,5 +70,78 @@ h1 {
   .middle,
   .right {
     flex: 1;
+  }
+  h1 {
+    font-size: 3em; /* Reduce font size on small screens */
+  }
+  .middle img {
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: white;
+    padding: 25px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 10);
+    max-width: 75%; /* Ensure images fit within their container */
+  }
+}
+
+/* iPads, Tablets (481px — 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .left,
+  .middle,
+  .right {
+    flex: 1;
+  }
+  .middle img {
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: white;
+    padding: 25px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 10);
+    max-width: 80%; /* Ensure images fit within their container */
+  }
+}
+
+/* Small screens, laptops (769px — 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    flex-direction: row;
+  }
+  .left,
+  .middle,
+  .right {
+    flex: 1;
+  }
+}
+
+/* Desktops, large screens (1025px — 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .content {
+    flex-direction: row;
+  }
+  .left,
+  .middle,
+  .right {
+    flex: 1;
+  }
+  .left {
+    height: auto; /* Reset the height to auto */
+  }
+}
+
+/* Extra large screens, TV (1201px and more) */
+@media (min-width: 1201px) {
+  .content {
+    flex-direction: row;
+  }
+  .left,
+  .middle,
+  .right {
+    flex: 1;
+  }
+  .left {
+    height: auto; /* Reset the height to auto */
   }
 }

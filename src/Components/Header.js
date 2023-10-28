@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import logoImage from "../img/namelogo.jpg";
 import { IoLocationSharp } from "react-icons/io5";
-// import { AiOutlineSearch } from "react-icons/ai";
 import ScrollText from "./ScrollText";
 import Confetti from "react-confetti";
 

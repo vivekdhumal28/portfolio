@@ -6,18 +6,19 @@ import "./Carousel.css";
 function CarouselComponent() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const visibleImageCount = calculateVisibleImageCount();
   const totalImages = images.length;
 
-  // Calculate the number of visible images based on screen width
+  const visibleImageCount = calculateVisibleImageCount();
   function calculateVisibleImageCount() {
     const screenWidth = window.innerWidth;
-    if (screenWidth >= 1200) {
+    if (screenWidth >= 1025) {
       return 7;
-    } else if (screenWidth >= 768) {
+    } else if (screenWidth >= 769) {
       return 5;
-    } else {
+    } else if (screenWidth >= 481) {
       return 3;
+    } else {
+      return 1;
     }
   }
 
@@ -51,29 +52,27 @@ function CarouselComponent() {
   );
 
   return (
-    <>
-      <div className="containerC">
-        <h1>Frontend Skills</h1>
-        <div className="image-sliderC">
-          <button className="btn" onClick={prevSlide}>
-            {<BiChevronLeft />}
-          </button>
-          <div className="slider-contentC">
-            {visibleImages.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Image1 ${index + 1}`}
-                className={`carousel-image ${index === 0 ? "active" : ""}`}
-              ></img>
-            ))}
-          </div>
-          <button className="btn" onClick={nextSlide}>
-            {<BiChevronRight />}
-          </button>
+    <div className="containerC">
+      <h1>Frontend Skills</h1>
+      <div className="image-sliderC">
+        <button className="btn" onClick={prevSlide}>
+          {<BiChevronLeft />}
+        </button>
+        <div className="slider-contentC">
+          {visibleImages.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Image1 ${index + 1}`}
+              className={`carousel-image ${index === 0 ? "active" : ""}`}
+            ></img>
+          ))}
         </div>
+        <button className="btn" onClick={nextSlide}>
+          {<BiChevronRight />}
+        </button>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -5,7 +5,6 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -21,16 +20,14 @@
 
 .slider-contentC {
   display: flex;
-  max-width: 100%;
-  transition: transform 0.5s;
-  gap: 4em;
+  gap: 1rem;
   overflow: hidden;
-  white-space: nowrap; /* Prevent images from wrapping */
+  white-space: nowrap;
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-image {
-  width: calc(100% / 7);
+  width: calc(100% / 7); /* Set the default width for large screens */
   height: auto;
   transition: transform 0.5s ease-in-out;
 }
@@ -48,8 +45,22 @@
   outline: none;
 }
 
-@media (max-width: 768px) {
-  .slider-content {
-    transform: translateX(-100%);
+@media (max-width: 1024px) {
+  .carousel-image {
+    width: calc(100% / 5); /* Adjust width for small screens and laptops */
   }
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    width: calc(100% / 3); /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-image {
+    width: 100%; /* Full width for mobile devices */
+  }
+
+  /* Add any additional CSS styles for responsiveness as needed */
 }

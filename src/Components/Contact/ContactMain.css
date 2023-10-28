@@ -1,15 +1,9 @@
 .contact-main-container {
   text-align: center;
-  padding: 20px;
-}
-
-.common-heading {
-  font-size: 2rem;
-  margin-top: 20px;
 }
 
 .map-container {
-  margin-top: 20px;
+  margin-top: 1em;
   overflow: hidden;
 }
 
@@ -42,17 +36,7 @@
   background-color: #0056b3;
 }
 
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-  .common-heading {
-    font-size: 1.5rem;
-  }
-
-  .map-container iframe {
-    height: 250px;
-  }
-
-  .contact-inputs {
-    max-width: 100%;
-  }
+.common-heading h1 {
+  font-size: 2rem;
+  margin-top: 0px;
 }

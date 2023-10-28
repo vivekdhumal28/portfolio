@@ -6,7 +6,7 @@ import { ContactUs } from "../ContactUs";
 const ContactMain = () => {
   return (
     <div className="contact-main-container">
-      <h2 className="common-heading">Contact</h2>
+      <h1 className="common-heading">Contact</h1>
 
       <div className="map-container">
         <iframe

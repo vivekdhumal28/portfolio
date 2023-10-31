@@ -1,7 +1,6 @@
 import React from "react";
 import profilePic from "../img/ToonmePic.jpeg";
 import { GoDownload } from "react-icons/go";
-
 import "./Home.css";
 import About from "./About";
 import BigScrollText from "./BigScrollText";

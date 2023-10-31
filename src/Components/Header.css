@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.logo-with-border img {
+.middle-section img {
   max-width: 10em;
   margin-right: 10px;
 }
@@ -38,12 +38,6 @@
 .right-section {
   display: flex;
   align-items: center;
-}
-
-.location {
-  display: flex;
-  align-items: center;
-  margin-right: 1em;
 }
 
 .hire-button {
@@ -71,10 +65,47 @@
     margin-right: 0;
     margin-bottom: 10px;
   }
+}
 
-  .location,
-  .search {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+/* Update your CSS for the sidebar and header */
+.sidebar {
+  border-top: 2px solid black;
+  position: fixed;
+  top: 1.5em;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  transition: left 0.3s;
+}
+
+.sidebar.open {
+  left: 0;
+  margin-top: 2.5em;
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+  color: black;
+}
+
+.sidebar ul {
+  margin-top: 1.55em;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar ul li {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  top: 1em;
+  padding: 0.2em;
 }

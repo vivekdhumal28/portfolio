@@ -17,13 +17,11 @@ export const ContactUs = () => {
         console.log(result.text);
         form.current.reset();
 
-        // Display a confirmation alert with styling
         const alertDiv = document.createElement("div");
         alertDiv.className = "confirmation-alert";
         alertDiv.innerHTML = "Email has been sent successfully!";
         document.body.appendChild(alertDiv);
 
-        // Automatically remove the alert after 3 seconds
         setTimeout(() => {
           document.body.removeChild(alertDiv);
         }, 3000);

@@ -1,4 +1,3 @@
-/* Default styles for all screen resolutions */
 .footer {
   background-color: #f2f2f2;
   padding: 20px;
@@ -61,12 +60,4 @@
     display: block;
     margin: 0 auto;
   }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Add specific styles for small screens and laptops here */
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-  /* Add specific styles for desktops and large screens here */
 }

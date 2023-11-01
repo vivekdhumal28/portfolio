@@ -10,10 +10,6 @@ const Education = () => {
         <p className="date-range">
           2017 - 2020 | Jawaharlal Nehru Engineering Collage
         </p>
-        <p>
-          Two-line description: Fully responsive for all devices and
-          mobile-responsive.
-        </p>
       </div>
     </div>
   );

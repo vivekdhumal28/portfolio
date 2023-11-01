@@ -1,4 +1,3 @@
-/* Education.css */
 .education {
   background-color: #5c9291;
   padding: 20px;
@@ -12,7 +11,7 @@
 .education h1 {
   text-align: center;
   margin-top: 0;
-  font-size: 5rem; /* Default font size for the heading */
+  font-size: 5rem;
 }
 
 .education-details h3 {

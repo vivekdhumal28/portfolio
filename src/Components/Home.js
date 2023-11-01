@@ -5,7 +5,7 @@ import "./Home.css";
 import About from "./About";
 import BigScrollText from "./BigScrollText";
 import ScrollText from "./ScrollText";
-import Contact from "./Contact";
+import ContactMain from "./Contact/ContactMain";
 import Footer from "./Footer";
 import ProjectMain from "./Project/ProjectMain";
 
@@ -55,7 +55,7 @@ const Home = () => {
         {
           <>
             <ScrollText />
-            <Contact />
+            <ContactMain />
             <Footer />
           </>
         }

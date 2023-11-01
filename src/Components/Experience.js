@@ -5,9 +5,7 @@ import { experienceInfo } from "../constants/Constants";
 const Experience = () => {
   return (
     <div className="experience">
-      <div className="status-bar">
-        {/* Add as many bars as needed for different experiences */}
-      </div>
+      <div className="status-bar"></div>
       <h1 className="experience-heading">Experience</h1>
       <div className="experience-item">
         <span className="job-title">Software Developer</span>{" "}

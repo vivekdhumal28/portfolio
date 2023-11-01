@@ -15,7 +15,7 @@
   border-radius: 0.3125rem;
   padding: 20px;
   margin: 1rem;
-  max-width: 100%; /* Make the container responsive */
+  max-width: 100%;
 }
 
 .slider-contentC {
@@ -27,7 +27,7 @@
 }
 
 .carousel-image {
-  width: calc(100% / 7); /* Set the default width for large screens */
+  width: calc(100% / 7);
   height: auto;
   transition: transform 0.5s ease-in-out;
 }
@@ -47,20 +47,18 @@
 
 @media (max-width: 1024px) {
   .carousel-image {
-    width: calc(100% / 5); /* Adjust width for small screens and laptops */
+    width: calc(100% / 5);
   }
 }
 
 @media (max-width: 768px) {
   .carousel-image {
-    width: calc(100% / 3); /* Adjust width for tablets */
+    width: calc(100% / 3);
   }
 }
 
 @media (max-width: 480px) {
   .carousel-image {
-    width: 100%; /* Full width for mobile devices */
+    width: 100%;
   }
-
-  /* Add any additional CSS styles for responsiveness as needed */
 }

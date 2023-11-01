@@ -1,26 +1,28 @@
 .header {
   background-color: white;
   display: flex;
-  justify-content: space-between; /* To separate left and right sections */
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Increased padding for better spacing */
+  padding: 10px 20px;
   color: #333;
   box-sizing: border-box;
   overflow: hidden;
   height: 4em;
 }
 
-.left-section {
+/* .left-section {
   display: flex;
   align-items: center;
-}
+} */
 
 .middle-section img {
   max-width: 10em;
   margin-right: 10px;
+  margin-top: 0.1em;
+  margin-left: 3em;
 }
 
-.navbar ul {
+/* .navbar ul {
   list-style-type: none;
   display: flex;
 }
@@ -33,7 +35,7 @@
   text-decoration: none;
   color: #333;
   font-size: 1em;
-}
+} */
 
 .right-section {
   display: flex;
@@ -49,6 +51,7 @@
   cursor: pointer;
   transition: background-color 0.3s;
   font-weight: bold;
+  margin-top: 0.5em;
 }
 
 .hire-button:hover {
@@ -59,9 +62,14 @@
   .right-section {
     justify-content: flex-end;
   }
+  .middle-section img {
+    max-width: 10em;
+    margin-right: 10px;
+    margin-top: 1em;
+    margin-left: 2em;
+  }
 }
 
-/* Update your CSS for the sidebar and header */
 .sidebar {
   border-top: 2px solid black;
   position: fixed;
@@ -80,10 +88,10 @@
 
 .hamburger {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 0.3em;
+  left: 10px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 2em;
   z-index: 1;
   color: black;
 }

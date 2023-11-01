@@ -1,6 +1,3 @@
-/* src/components/Home.css */
-
-/* Default styling for screens wider than 480px (mobile devices) */
 .home-container {
   display: flex;
   flex-direction: column;
@@ -15,27 +12,24 @@
 /* For tablets (481px—768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   .home-container {
-    flex-direction: column; /* Image and text stacked for tablets */
+    flex-direction: column;
   }
 }
 
-/* For small screens, laptops (769px—1024px) and desktops (1025px—1200px) */
 @media (min-width: 769px) and (max-width: 1200px) {
   .home-container {
     display: flex;
-    flex-direction: row; /* Image and text side by side for laptops and desktops */
+    flex-direction: row;
   }
 }
 
-/* For extra-large screens, TV (1201px and more) */
 @media (min-width: 1201px) {
   .home-container {
     display: flex;
-    flex-direction: row; /* Image and text side by side for extra-large screens */
+    flex-direction: row;
   }
 }
 
-/* Style for the download button */
 .download-button {
   background-color: #007bff;
   color: #fff;
@@ -46,36 +40,32 @@
   border-radius: 5px;
   margin-top: 20px;
   text-transform: uppercase;
-  transition: background-color 0.3s; /* Smooth transition on hover */
+  transition: background-color 0.3s;
 }
 
 .download-button i {
   margin-right: 5px;
 }
 
-/* Add hover effect for the button */
 .download-button:hover {
-  background-color: #0056b3; /* Slightly darker on hover */
+  background-color: #0056b3;
 }
 
-/* Style for the skill description text */
 .medium-text {
   font-size: 18px;
   margin-top: 10px;
-  color: #333; /* Dark text color for better readability */
-  line-height: 1.5; /* Improved line spacing for readability */
-  text-align: left; /* Center-align the text */
-  max-width: 400px; /* Set a maximum width for better text readability */
+  color: #333;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 400px;
 }
 
-/* Additional style for the text container */
 .text-container {
   flex: 1;
   padding: 20px;
   text-align: left;
 }
 
-/* The rest of your CSS remains the same */
 .image-container {
   flex: 1;
   text-align: left;
@@ -84,11 +74,10 @@
 img {
   max-width: 100%;
   height: auto;
-  /* border-radius: 50%; Rounded image for a modern look */
 }
 
 .large-text {
-  font-size: 28px; /* Slightly smaller font for readability */
+  font-size: 28px;
   font-weight: bold;
-  color: #333; /* Darker text color for better contrast */
+  color: #333;
 }

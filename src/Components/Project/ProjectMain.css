@@ -16,11 +16,11 @@
 
 @media (min-width: 790px) and (max-width: 849px) {
   .main {
-    flex-wrap: nowrap; /* Prevent card wrapping */
+    flex-wrap: nowrap;
   }
 
   .project-card {
-    flex-basis: 100%; /* Take up 100% of the available width */
+    flex-basis: 100%;
     max-width: 100%;
     margin-right: 0;
     margin-bottom: 0;
@@ -29,16 +29,16 @@
 
 @media (min-width: 448px) and (max-width: 506px) {
   .main {
-    flex-wrap: nowrap; /* Prevent card wrapping */
+    flex-wrap: nowrap;
   }
 
   @media (min-width: 420px) and (max-width: 768px) {
     .main {
-      flex-wrap: nowrap; /* Prevent card wrapping */
+      flex-wrap: nowrap;
     }
 
     .project-card {
-      flex-basis: 100%; /* Take up 100% of the available width */
+      flex-basis: 100%;
       max-width: 100%;
       margin-right: 0;
       margin-bottom: 0;
@@ -46,7 +46,7 @@
   }
 
   .project-card {
-    flex-basis: 100%; /* Take up 100% of the available width */
+    flex-basis: 100%;
     max-width: 100%;
     margin-right: 0;
     margin-bottom: 0;

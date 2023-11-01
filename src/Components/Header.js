@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-import logoImage from "../img/namelogo.jpg";
+import logoImage from "../img/logo.png";
 import ScrollText from "./ScrollText";
 import Confetti from "react-confetti";
 
@@ -71,10 +71,13 @@ function Header() {
           <div className="hamburger" onClick={toggleSidebar}>
             {isSidebarOpen ? "✕" : "☰"}
           </div>
+          <div className="middle-section">
+            <img src={logoImage} alt="Your Logo" />
+          </div>
         </div>
-        <div className="middle-section">
+        {/* <div className="middle-section">
           <img src={logoImage} alt="Your Logo" />
-        </div>
+        </div> */}
         <div className="right-section">
           <button className="hire-button" onClick={handleHireButtonClick}>
             Hire

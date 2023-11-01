@@ -1,6 +1,3 @@
-/* YourComponent.css */
-
-/* Style for the form container */
 form {
   max-width: 25rem;
   margin: 0 auto;
@@ -11,12 +8,10 @@ form {
   text-align: center;
 }
 
-/* Default font size for all screens */
 .contact h1 {
   font-size: 2em;
 }
 
-/* Style for labels and input elements */
 label {
   font-weight: bold;
 }
@@ -45,8 +40,6 @@ input[type="submit"] {
   cursor: pointer;
   font-weight: bold;
 }
-
-/* Style for responsive design */
 
 /* Mobile devices (320px — 480px) */
 @media (max-width: 480px) {

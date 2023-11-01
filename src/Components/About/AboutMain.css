@@ -72,7 +72,7 @@ h1 {
     flex: 1;
   }
   h1 {
-    font-size: 3em; /* Reduce font size on small screens */
+    font-size: 3em;
   }
   .middle img {
     border: 2px solid #000;
@@ -80,7 +80,7 @@ h1 {
     background-color: white;
     padding: 25px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 10);
-    max-width: 75%; /* Ensure images fit within their container */
+    max-width: 75%;
   }
 }
 
@@ -100,7 +100,7 @@ h1 {
     background-color: white;
     padding: 25px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 10);
-    max-width: 80%; /* Ensure images fit within their container */
+    max-width: 80%;
   }
 }
 
@@ -127,7 +127,7 @@ h1 {
     flex: 1;
   }
   .left {
-    height: auto; /* Reset the height to auto */
+    height: auto;
   }
 }
 
@@ -142,6 +142,6 @@ h1 {
     flex: 1;
   }
   .left {
-    height: auto; /* Reset the height to auto */
+    height: auto;
   }
 }

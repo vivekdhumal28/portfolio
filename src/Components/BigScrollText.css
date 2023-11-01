@@ -1,7 +1,5 @@
-/* BigScrollText.css */
-
 .scrolling-text-container_big {
-  height: 6rem; /* Set the height to 5rem */
+  height: 6rem;
   overflow: hidden;
   font-size: 4rem;
   border-top: 1px solid black;

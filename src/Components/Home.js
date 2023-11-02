@@ -30,7 +30,7 @@ const Home = () => {
             transforming concepts into cutting-edge web applications, leveraging
             my expertise in React.js and web development.
           </p>
-          <button className="download-button" onClick={handleDownload}>
+          <button className="hire-button" onClick={handleDownload}>
             RESUME {<GoDownload />}
           </button>
         </div>

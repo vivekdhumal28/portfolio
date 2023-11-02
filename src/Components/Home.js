@@ -26,9 +26,9 @@ const Home = () => {
             Turning Vision Into Reality With Code And Design.{" "}
           </h1>
           <p className="medium-text">
-            As a skilled full-stack developer, I am dedicated to turning ideas
-            into innovative web applications. My expertise in React.js and web
-            development.
+            As a proficient Frontend React Developer, I'm committed to
+            transforming concepts into cutting-edge web applications, leveraging
+            my expertise in React.js and web development.
           </p>
           <button className="download-button" onClick={handleDownload}>
             RESUME {<GoDownload />}

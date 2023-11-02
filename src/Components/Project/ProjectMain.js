@@ -13,8 +13,7 @@ const ProjectMain = () => {
             </div>
             <div className="project-details">
               <h2 className="project-name">{project.name}</h2>
-              <p className="project-description">{project.description}</p>{" "}
-              {/* Fixed the typo here */}
+              <p className="project-description">{project.discription}</p>{" "}
               <div className="button-container">
                 <a
                   href={project.github}

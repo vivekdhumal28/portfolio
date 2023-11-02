@@ -14,7 +14,7 @@ function Header() {
     setTimeout(() => {
       setShowConfetti(false);
       window.location.href = "mailto:vivekdhumal.28@gmail.com";
-    }, 6000);
+    }, 4000);
   };
 
   const toggleSidebar = () => {

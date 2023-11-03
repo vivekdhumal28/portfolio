@@ -67,12 +67,18 @@ input[type="submit"] {
   .contact h1 {
     font-size: 1.5em;
   }
+  form {
+    max-width: 80%;
+  }
 }
 
 /* iPads, Tablets (481px — 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   .contact h1 {
     font-size: 1.5em;
+  }
+  form {
+    max-width: 70%;
   }
 }
 
@@ -81,11 +87,17 @@ input[type="submit"] {
   .contact h1 {
     font-size: 2em;
   }
+  form {
+    max-width: 50%;
+  }
 }
 
 /* Desktops, large screens (1025px — 1200px) */
 @media (min-width: 1025px) and (max-width: 1200px) {
   .contact h1 {
     font-size: 2.2em;
+  }
+  form {
+    max-width: 40%;
   }
 }

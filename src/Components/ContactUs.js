@@ -50,7 +50,7 @@ export const ContactUs = () => {
         {confirmationMessage && (
           <div className="confirmation-alert">{confirmationMessage}</div>
         )}
-        <form ref={form} onSubmit={sendEmail}>
+        <form className="form-container" ref={form} onSubmit={sendEmail}>
           <label>Name</label>
           <input type="text" name="user_name" placeholder="Name" />
           <label>Email</label>

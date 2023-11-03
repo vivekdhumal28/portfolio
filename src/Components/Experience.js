@@ -10,7 +10,7 @@ const Experience = () => {
       <div className="experience-item">
         <span className="job-title">Software Developer</span>{" "}
         <span className="company-name">@ Capgemini Engineering</span>
-        <p className="date-range">January 2022 to August 2023</p>
+        <p className="date-range">April 2021 to Present</p>
         <p className="description">{experienceInfo}</p>
       </div>
     </div>

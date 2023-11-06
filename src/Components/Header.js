@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import logoImage from "../img/logo.png";
 import ScrollText from "./ScrollText";
+// import ScrollTextTag from "./ScrollTextTag";
 import Confetti from "react-confetti";
 
 function Header() {
@@ -25,7 +26,6 @@ function Header() {
     setIsSidebarOpen(false);
   };
 
-  // Close the sidebar when clicking outside
   document.addEventListener("click", (event) => {
     if (isSidebarOpen) {
       if (
@@ -41,7 +41,7 @@ function Header() {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      closeSidebar(); // Close the sidebar on mobile devices
+      closeSidebar();
     }
   };
 
@@ -91,6 +91,7 @@ function Header() {
       )}
       <div>
         <ScrollText />
+        {/* <ScrollTextTag myText={" * * Open To Work * * "} /> */}
       </div>
     </>
   );

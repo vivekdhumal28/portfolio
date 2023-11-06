@@ -9,7 +9,6 @@
   margin: 20px;
 }
 
-/* For tablets (481px—768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   .home-container {
     flex-direction: column;

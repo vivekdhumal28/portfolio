@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutMain.css"; // You can create a CSS file for styling
+import "./AboutMain.css";
 import vivekPic from "../../img/Vivek-Picture.png";
 import { info } from "../../constants/Constants";
 

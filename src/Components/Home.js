@@ -46,7 +46,7 @@ const Home = () => {
       <div id="project">
         {
           <>
-            <BigScrollText collection={" 😍  PROJECT WORK 🫡"} />
+            <BigScrollText collection={" 😍  PROJECT WORK 👨‍💻 "} />
             <ProjectMain />
           </>
         }
@@ -55,6 +55,9 @@ const Home = () => {
         {
           <>
             <ScrollText />
+            <BigScrollText
+              collection={" At Your Service 🫡 At Your Service 🫡 "}
+            />
             <ContactMain />
             <Footer />
           </>

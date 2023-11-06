@@ -21,7 +21,6 @@
   text-align: right;
 }
 
-/* Media queries for different screen resolutions */
 @media screen and (max-width: 480px) {
   .footer {
     flex-direction: column;

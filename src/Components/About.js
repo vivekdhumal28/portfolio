@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div>
       <AboutMain />
-      <ScrollTextTag />
+      <ScrollTextTag myText={" My Skills "} />
       <SkillsScroll skilltext={`🧑‍💻 💼  🧠  🧑‍💻 ✌️ 🎓`} />
       <Carousel />
       <Experience />

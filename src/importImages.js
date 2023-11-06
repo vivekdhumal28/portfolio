@@ -8,13 +8,15 @@ import I7 from "./img/icons7.png";
 import I8 from "./img/icons8.png";
 import I9 from "./img/icons9.png";
 import I10 from "./img/icons10.png";
+import I11 from "./img/icons11.png";
+
 import WA from "./img/wa.png";
 import Phone from "./img/phone.png";
 import linkdIn from "./img/linkdIn.png";
 import github from "./img/github.png";
 import mail from "./img/mail.png";
 
-const images = [I1, I2, I3, I4, I5, I6, I7, I8, I9, I10];
+const images = [I1, I2, I3, I4, I5, I6, I7, I8, I9, I10, I11];
 
 const socialImg = [github, linkdIn, WA, mail, Phone];
 

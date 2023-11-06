@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import "./ScrollTextTag.css";
 
-const ScrollTextTag = () => {
+const ScrollTextTag = ({ myText }) => {
   useEffect(() => {
     const marquee = document.getElementById("scrolling-text-marquee");
     marquee.addEventListener("end", () => {
@@ -16,7 +16,7 @@ const ScrollTextTag = () => {
   return (
     <div className="scrolling-text-container">
       <marquee behavior="scroll" direction="right" id="scrolling-text-marquee">
-        {" My Skills ".repeat(20)}
+        {myText.repeat(25)}
       </marquee>
     </div>
   );

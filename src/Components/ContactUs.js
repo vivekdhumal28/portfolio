@@ -45,8 +45,8 @@ export const ContactUs = () => {
 
   return (
     <>
+      <h1 className="contact">Get In Touch</h1>
       <div className="contact-us-main">
-        <h1 className="contact">Get In Touch</h1>
         {confirmationMessage && (
           <div className="confirmation-alert">{confirmationMessage}</div>
         )}

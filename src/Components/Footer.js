@@ -18,11 +18,11 @@ const Footer = () => {
       </div>
       <div className="middle-section">
         <p>
-          Build by{" "}
+          Built with{" "}
           <span role="img" aria-label="Heart">
             ❤️
           </span>{" "}
-          vivekdhumal28
+          by vivekdhumal28
         </p>
       </div>
       <div className="right-section">

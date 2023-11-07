@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutMain.css";
-import vivekPic from "../../img/Vivek-Picture.png";
+// import vivekPic from "../../img/Vivek-Picture.png";
+import ProfilePic from "../../img/ProfilePic.png";
 import { info } from "../../constants/Constants";
 
 const About = () => {
@@ -13,7 +14,7 @@ const About = () => {
           <p>{info}</p>
         </div>
         <div className="middle">
-          <img src={vivekPic} alt=""></img>
+          <img src={ProfilePic} alt=""></img>
         </div>
         <div className="right">
           <div className="info">

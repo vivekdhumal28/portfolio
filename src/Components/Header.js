@@ -66,32 +66,33 @@ function Header() {
           </li>
         </ul>
       </div>
-      <header className="header">
-        <div className="left-section">
-          <div className="hamburger" onClick={toggleSidebar}>
-            {isSidebarOpen ? "✕" : "☰"}
+      <div className="sticky">
+        <header className="header">
+          <div className="left-section">
+            <div className="hamburger" onClick={toggleSidebar}>
+              {isSidebarOpen ? "✕" : "☰"}
+            </div>
+            <div className="middle-section">
+              <img src={logoImage} alt="Your Logo" />
+            </div>
           </div>
-          <div className="middle-section">
-            <img src={logoImage} alt="Your Logo" />
-          </div>
-        </div>
-        {/* <div className="middle-section">
+          {/* <div className="middle-section">
           <img src={logoImage} alt="Your Logo" />
         </div> */}
-        <div className="right-section">
-          <button className="hire-button" onClick={handleHireButtonClick}>
-            Hire
-          </button>
+          <div className="right-section">
+            <button className="hire-button" onClick={handleHireButtonClick}>
+              Hire
+            </button>
+          </div>
+        </header>
+        {showConfetti && (
+          <div className="confetti-container">
+            <Confetti width={window.innerWidth} height={window.innerHeight} />
+          </div>
+        )}
+        <div>
+          <ScrollText />
         </div>
-      </header>
-      {showConfetti && (
-        <div className="confetti-container">
-          <Confetti width={window.innerWidth} height={window.innerHeight} />
-        </div>
-      )}
-      <div>
-        <ScrollText />
-        {/* <ScrollTextTag myText={" * * Open To Work * * "} /> */}
       </div>
     </>
   );

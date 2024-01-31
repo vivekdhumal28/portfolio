@@ -23,11 +23,11 @@ const About = () => {
               <div className="label">Satisfied Clients</div>
             </div>
             <div className="row">
-              <div className="number">04</div>
+              <div className="number">4</div>
               <div className="label">Projects</div>
             </div>
             <div className="row">
-              <div className="number">2.6+</div>
+              <div className="number">3</div>
               <div className="label">Years Of Experience</div>
             </div>
           </div>

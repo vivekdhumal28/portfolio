@@ -1,5 +1,7 @@
 import MovieHub from "../img/MoviePoster.png";
 import Draw from "../img/Draw.png";
+import Textmodifier from "../img/Textmodifier.png";
+import Googlemeet from "../img/Googlemeet.png";
 
 const projectInfo = [
   {
@@ -18,6 +20,22 @@ const projectInfo = [
     discription: `Draw App is a user-friendly web application for basic drawing tasks. With features like shape drawing, color filling, brush, eraser, and image saving, it's built using HTML, CSS, and JavaScript for a seamless drawing experience.`,
     github: "https://github.com/vivekdhumal28/Draw",
     visitLink: "https://dedraw.netlify.app/",
+  },
+  {
+    id: 3,
+    portrait: Textmodifier,
+    name: "Txt Modifier",
+    discription: `Txt Modifier is a free and efficient tool for instant word and character counts, catering to various platforms like Facebook, blogs, and documents across web browsers`,
+    github: "https://github.com/vivekdhumal28/TextModifier",
+    visitLink: "https://txtmodifier.netlify.app/",
+  },
+  {
+    id: 4,
+    portrait: Googlemeet,
+    name: "Google Meet Like App",
+    discription: `Developed a Google Meet clone application using Next.js 13. Additionally, incorporated technologies like Socket.IO, PeerJS, and Tailwind CSS in its development.`,
+    github: "https://github.com/vivekdhumal28/Google-Meet",
+    visitLink: "https://github.com/vivekdhumal28/Google-Meet",
   },
 ];
 

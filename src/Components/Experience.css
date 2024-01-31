@@ -1,11 +1,14 @@
 .experience {
-  background-color: #ffdc44;
+  background-color: #f8f4f4;
   padding: 20px;
   border-radius: 0.3125rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   overflow: hidden;
   margin: 1em;
+  text-align: center;
+  align-content: start;
+  border: 1px solid #ccc;
 }
 
 @media (max-width: 480px) {
@@ -60,7 +63,7 @@
   margin-top: 10px;
   text-align: center;
   font-family: "Archivo Black", sans-serif;
-  color: rgb(20, 20, 68);
+  color: black;
 }
 
 .experience-item {

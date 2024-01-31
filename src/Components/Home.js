@@ -11,7 +11,7 @@ import ProjectMain from "./Project/ProjectMain";
 
 const Home = () => {
   const handleDownload = () => {
-    const PdfPath = process.env.PUBLIC_URL + "/pdfs/Vivek Resume.pdf";
+    const PdfPath = process.env.PUBLIC_URL + "/pdfs/Vivek_Dhumal_Resume.pdf";
     window.open(PdfPath, "_blank");
   };
 

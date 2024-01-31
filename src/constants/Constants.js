@@ -1,6 +1,6 @@
 const info = `"Hi, I'm Vivek, a web developer and Frontend-React Developer with a passion for
             creating beautiful, functional, and user-centered digital
-            experiences. With over 2.6 years of experience in the field. 
+            experiences. With 3 years of experience in the field. 
             
             I am always
             looking for new and innovative ways to bring my clients' visions to

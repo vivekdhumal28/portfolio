@@ -1,15 +1,14 @@
 .education {
-  background-color: #5c9291;
+  background-color: #f8f4f4;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 0.3125rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
   margin: 1rem;
 }
 
 .education h1 {
-  text-align: center;
   margin-top: 0;
   font-size: 5rem;
 }
@@ -17,12 +16,13 @@
 .education-details h3 {
   font-size: 1.5rem;
   margin: 10px 0;
-  color: whitesmoke;
+  color: #3498db;
 }
 
 .education-details p {
   font-size: 16px;
   margin: 5px 0;
+  color: #3498db;
 }
 
 @media screen and (max-width: 480px) {

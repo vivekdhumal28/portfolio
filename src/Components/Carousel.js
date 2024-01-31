@@ -53,7 +53,7 @@ function CarouselComponent() {
 
   return (
     <div className="containerC">
-      <h1>Frontend Skills</h1>
+      <h1 className="experience-heading">Frontend Skills</h1>
       <div className="image-sliderC">
         <button className="btn" onClick={prevSlide}>
           {<BiChevronLeft />}

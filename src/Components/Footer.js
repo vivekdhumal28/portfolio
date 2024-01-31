@@ -14,15 +14,15 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="left-section">
-        <p>2023 © All rights reserved</p>
+        <p>2023 © Community</p>
       </div>
       <div className="middle-section">
         <p>
-          Built with{" "}
+          Customized with ☕ and{" "}
           <span role="img" aria-label="Heart">
             ❤️
           </span>{" "}
-          by vivekdhumal28
+          by vivek dhumal
         </p>
       </div>
       <div className="right-section">

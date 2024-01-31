@@ -1,5 +1,6 @@
 import React from "react";
-import profilePic from "../img/ToonmePic.jpeg";
+import MainBG from "../img/MainBG.png";
+
 import { GoDownload } from "react-icons/go";
 import "./Home.css";
 import About from "./About";
@@ -19,7 +20,7 @@ const Home = () => {
     <>
       <div className="home-container">
         <div className="image-container">
-          <img src={profilePic} alt="Profile"></img>
+          <img src={MainBG} alt="Profile"></img>
         </div>
         <div className="text-container">
           <h1 className="large-text">

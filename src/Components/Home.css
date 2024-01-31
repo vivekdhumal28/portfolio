@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-image: url("../img/ToonemeBG.png");
+  background-color: #c4ccc4;
+  /* background-image: url("../img/MainBG.png"); */
   border-radius: 0.3rem;
   margin: 20px;
 }
